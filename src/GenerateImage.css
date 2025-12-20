@@ -1,0 +1,28 @@
+@media screen and (min-width: 1024px) {
+  .card {
+    max-width: 100% !important; /* bigger width on laptop */
+    padding: 5% !important; /* more padding */
+  }
+
+  .imageCard {
+    width: 400px !important; /* bigger image card */
+  }
+
+  .image {
+    height: 400px !important; /* bigger image height */
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    padding: 15px !important; /* less padding on mobile */
+  }
+
+  .imageCard {
+    width: 250px !important; /* smaller image card */
+  }
+
+  .image {
+    height: 250px !important; /* smaller image height */
+  }
+}
