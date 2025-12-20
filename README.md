@@ -1,74 +1,74 @@
-## 🎨 Pickabook – AI Personalised Children’s Illustration
+# PickABook – Frontend
 
-Pickabook is an AI-powered personalisation prototype that transforms a child’s photo into a cohesive illustrated character for children’s books.
-Instead of simple face pasting, the system focuses on visual realism and identity consistency, producing illustrations that feel natural and story-ready.
-This project demonstrates AI personalisation, full-stack engineering, and pragmatic decision-making in a real-world product scenario.
+This repository contains the frontend implementation for the PickABook assignment.  
+It provides a user-friendly interface for uploading images and viewing the generated personalized illustration.
 
-#🚀 What This Solves
+---
 
-Most face-insertion approaches look unnatural—like a sticker placed on a fixed body.
-Pickabook avoids this by generating a unified stylised illustration, considering facial structure, head pose, and hair to improve realism and user experience.
+## 🚀 Features
+- Image upload interface
+- API integration with backend
+- Displays generated personalized illustration
+- Simple and clean UI
+- Responsive design
 
-#✨ Key Features
+---
 
-📤 Upload a child’s photo via web UI
+## 🛠 Tech Stack
+- React.js
+- JavaScript
+- HTML
+- CSS
+- Axios
 
-🧠 Face detection using face-api.js
-🎨 Stylised illustration generation using Pollinations model
-🖼️ Image processing & blending with Canvas
-☁️ Cloud-based image handling via Cloudinary
-📥 Download-ready personalised illustration
-⚙️ REST API–based backend architecture
-🧠 Why This Approach?
+---
 
-Cost-effective: Avoids paid AI models while remaining reproducible
-Product-driven: Prioritises realism over basic technical compliance
-Scalable: Clear separation of frontend, backend, and AI pipeline
-Extensible: Can easily swap in paid identity-preserving models in future
+## ⚙️ Setup & Installation
 
-#🛠️ Tech Stack:
+1. Clone the repository
+```bash
+git clone https://github.com/Srushti-Gadivaddar/Pickabook-assignment-frontend.git
+cd Pickabook-assignment-frontend
+Install dependencies
 
-🌐 Frontend
-  React 
-  HTML, CSS, JavaScript
-
-⚙️ Backend
-  Node.js
-  Express.js
-
-#🧠 AI & Image Processing
-
-face-api.js – face detection
-Canvas – image processing & compositing
-Pollinations model – stylised image generation
-
-#☁️ Cloud & Dev Tools
-Cloudinary
-Git & GitHub
-VS Code
-Hoppscotch
-
-#🏗️ Architecture Overview
-
-User uploads image from browser
-Frontend sends image (FormData) to backend
-Backend performs:
-Face detection
-Image preprocessing
-Stylised illustration generation
-Personalised illustration is returned to UI
-
-User previews and downloads the result
-
-(Hand-drawn architecture diagram included in the repository.)
-
-🚀 Getting Started
-# Install dependencies
+bash
+Copy code
 npm install
+Start the application
 
-# Run backend server
-node index.js
+bash
+Copy code
+npm start
+🔗 Backend Configuration
+Ensure the backend server is running and update the API base URL if required:
 
+js
+Copy code
+const BASE_URL = "http://localhost:8080";
+
+⚠️ Limitations
+Dependent on backend availability
+Minimal UI focused on functionality
+
+🔮 Improvements in V2
+Add multiple illustration styles
+Enhance UI/UX
+Improve error handling and loading states
+
+Deploy frontend and backend
+
+👤 Author
+Srushti Gadivaddar
+---
+
+### ✅ Final checklist before submission
+✔ README added to both repos  
+✔ Committed & pushed  
+✔ Links already shared in assignment  
+✔ PDF + ZIP uploaded  
+
+You’re **fully submission-ready now** 🚀  
+If you want a **last 5-minute review** before clicking *Submit*, I’m here 😊
 
 Environment variables required for Cloudinary configuration.
 
