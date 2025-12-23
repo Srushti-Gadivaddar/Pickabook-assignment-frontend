@@ -31,9 +31,15 @@ function GenerateImage() {
       const res = await axios.post("https://backend-pickabook-assignment.onrender.com/upload", formData);
       setImageUrl(res.data.imageUrl);
       setMessage("Image uploaded. You can personalize now.");
-    } catch {
-      setMessage("Upload failed.try again!");
-    } finally {
+    }  catch (err) {
+      console.error(err);
+      setMessage(
+        err.response?.data?.error ||
+        err.response?.data?.details ||
+        "Generation failed. Try again."
+      );
+    }
+ finally {
       setLoading(false);
     }
   };
